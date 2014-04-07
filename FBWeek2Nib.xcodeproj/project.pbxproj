@@ -23,6 +23,10 @@
 		3355D59C18EF486100FFC3E6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3355D59A18EF486100FFC3E6 /* LoginViewController.xib */; };
 		33E35E0418F0D2CB00AABF5F /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E35E0218F0D2CB00AABF5F /* FeedViewController.m */; };
 		33E35E0518F0D2CB00AABF5F /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E35E0318F0D2CB00AABF5F /* FeedViewController.xib */; };
+		33E35E0918F3425300AABF5F /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E35E0718F3425300AABF5F /* ModalViewController.m */; };
+		33E35E0A18F3425300AABF5F /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E35E0818F3425300AABF5F /* ModalViewController.xib */; };
+		33E35E0E18F35A2B00AABF5F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E35E0C18F35A2B00AABF5F /* ProfileViewController.m */; };
+		33E35E0F18F35A2B00AABF5F /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E35E0D18F35A2B00AABF5F /* ProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,12 @@
 		33E35E0118F0D2CB00AABF5F /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		33E35E0218F0D2CB00AABF5F /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		33E35E0318F0D2CB00AABF5F /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		33E35E0618F3425300AABF5F /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		33E35E0718F3425300AABF5F /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		33E35E0818F3425300AABF5F /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+		33E35E0B18F35A2B00AABF5F /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		33E35E0C18F35A2B00AABF5F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		33E35E0D18F35A2B00AABF5F /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,12 @@
 				33E35E0118F0D2CB00AABF5F /* FeedViewController.h */,
 				33E35E0218F0D2CB00AABF5F /* FeedViewController.m */,
 				33E35E0318F0D2CB00AABF5F /* FeedViewController.xib */,
+				33E35E0618F3425300AABF5F /* ModalViewController.h */,
+				33E35E0718F3425300AABF5F /* ModalViewController.m */,
+				33E35E0818F3425300AABF5F /* ModalViewController.xib */,
+				33E35E0B18F35A2B00AABF5F /* ProfileViewController.h */,
+				33E35E0C18F35A2B00AABF5F /* ProfileViewController.m */,
+				33E35E0D18F35A2B00AABF5F /* ProfileViewController.xib */,
 			);
 			path = FBWeek2Nib;
 			sourceTree = "<group>";
@@ -235,7 +251,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E35E0F18F35A2B00AABF5F /* ProfileViewController.xib in Resources */,
 				3355D57418EF482000FFC3E6 /* InfoPlist.strings in Resources */,
+				33E35E0A18F3425300AABF5F /* ModalViewController.xib in Resources */,
 				3355D57C18EF482000FFC3E6 /* Images.xcassets in Resources */,
 				33E35E0518F0D2CB00AABF5F /* FeedViewController.xib in Resources */,
 				3355D59C18EF486100FFC3E6 /* LoginViewController.xib in Resources */,
@@ -259,7 +277,9 @@
 			files = (
 				3355D57A18EF482000FFC3E6 /* AppDelegate.m in Sources */,
 				3355D57618EF482000FFC3E6 /* main.m in Sources */,
+				33E35E0918F3425300AABF5F /* ModalViewController.m in Sources */,
 				33E35E0418F0D2CB00AABF5F /* FeedViewController.m in Sources */,
+				33E35E0E18F35A2B00AABF5F /* ProfileViewController.m in Sources */,
 				3355D59B18EF486100FFC3E6 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

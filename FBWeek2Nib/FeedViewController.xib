@@ -7,8 +7,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedViewController">
             <connections>
                 <outlet property="contentView" destination="WJO-d2-jsj" id="VqG-2V-6vb"/>
+                <outlet property="feedImage" destination="BQr-1F-Lqd" id="d1M-Vi-40r"/>
                 <outlet property="feedViewIndicator" destination="0Rb-9w-qmc" id="yke-LR-0lY"/>
                 <outlet property="scrollView" destination="Ndc-CC-9KF" id="kyF-Kp-Rav"/>
+                <outlet property="statusButton" destination="EL1-6e-esf" id="qlH-2G-zth"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,8 +23,18 @@
                     <rect key="frame" x="150" y="214" width="20" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EL1-6e-esf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="status_bar">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushStatusButton:" destination="-1" eventType="touchUpInside" id="wTB-MW-RWu"/>
+                    </connections>
+                </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Ndc-CC-9KF">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <rect key="frame" x="0.0" y="45" width="320" height="523"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" id="WJO-d2-jsj">
@@ -46,5 +58,6 @@
     </objects>
     <resources>
         <image name="feed" width="320" height="415"/>
+        <image name="status_bar" width="640" height="90"/>
     </resources>
 </document>
