@@ -17,6 +17,9 @@
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (strong, nonatomic) IBOutlet UIButton *signupForFacebookLabel;
 @property (strong, nonatomic) IBOutlet UIButton *loginButton;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicatorView;
+
+- (IBAction)tapLoginButton:(id)sender;
 
 @end
 
@@ -73,6 +76,9 @@
     [self.passwordTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     self.passwordTextField.autocorrectionType = UITextAutocorrectionTypeNo;
     self.passwordTextField.secureTextEntry = YES;
+    
+    //Activity Indicator for login
+    self.indicatorView.hidden = YES;
 }
 
 - (void)textFieldDidChange:(UITextField *)textField {
@@ -80,6 +86,24 @@
         self.loginButton.enabled = YES;
     } else {
         self.loginButton.enabled = NO;
+    }
+}
+
+- (IBAction)tapLoginButton:(id)sender {
+    [self.indicatorView startAnimating];
+    self.indicatorView.hidden = NO;
+    [self performSelector:@selector(checkPasswordSubmission) withObject:nil afterDelay:2];
+
+}
+
+- (void)checkPasswordSubmission {
+    if ([self.passwordTextField.text isEqualToString:@"password"]) {
+        NSLog(@"Correct password");
+    } else {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Incorrect Password" message:@"The password you entered is incorrect. Please try again." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alertView show];
+        [self.indicatorView stopAnimating];
+        self.indicatorView.hidden = YES;
     }
 }
 

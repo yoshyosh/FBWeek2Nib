@@ -21,6 +21,8 @@
 		3355D58F18EF482000FFC3E6 /* FBWeek2NibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3355D58E18EF482000FFC3E6 /* FBWeek2NibTests.m */; };
 		3355D59B18EF486100FFC3E6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3355D59918EF486100FFC3E6 /* LoginViewController.m */; };
 		3355D59C18EF486100FFC3E6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3355D59A18EF486100FFC3E6 /* LoginViewController.xib */; };
+		33E35E0418F0D2CB00AABF5F /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E35E0218F0D2CB00AABF5F /* FeedViewController.m */; };
+		33E35E0518F0D2CB00AABF5F /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E35E0318F0D2CB00AABF5F /* FeedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		3355D59818EF486100FFC3E6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		3355D59918EF486100FFC3E6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3355D59A18EF486100FFC3E6 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		33E35E0118F0D2CB00AABF5F /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		33E35E0218F0D2CB00AABF5F /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		33E35E0318F0D2CB00AABF5F /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,9 @@
 				3355D59818EF486100FFC3E6 /* LoginViewController.h */,
 				3355D59918EF486100FFC3E6 /* LoginViewController.m */,
 				3355D59A18EF486100FFC3E6 /* LoginViewController.xib */,
+				33E35E0118F0D2CB00AABF5F /* FeedViewController.h */,
+				33E35E0218F0D2CB00AABF5F /* FeedViewController.m */,
+				33E35E0318F0D2CB00AABF5F /* FeedViewController.xib */,
 			);
 			path = FBWeek2Nib;
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 			files = (
 				3355D57418EF482000FFC3E6 /* InfoPlist.strings in Resources */,
 				3355D57C18EF482000FFC3E6 /* Images.xcassets in Resources */,
+				33E35E0518F0D2CB00AABF5F /* FeedViewController.xib in Resources */,
 				3355D59C18EF486100FFC3E6 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +259,7 @@
 			files = (
 				3355D57A18EF482000FFC3E6 /* AppDelegate.m in Sources */,
 				3355D57618EF482000FFC3E6 /* main.m in Sources */,
+				33E35E0418F0D2CB00AABF5F /* FeedViewController.m in Sources */,
 				3355D59B18EF486100FFC3E6 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +457,7 @@
 				3355D59418EF482000FFC3E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3355D59518EF482000FFC3E6 /* Build configuration list for PBXNativeTarget "FBWeek2NibTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +466,7 @@
 				3355D59718EF482000FFC3E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

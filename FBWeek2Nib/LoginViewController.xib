@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
                 <outlet property="emailTextField" destination="DJL-6W-3cE" id="b0t-OP-TDb"/>
+                <outlet property="indicatorView" destination="QwS-9H-35F" id="Abt-Ik-9W4"/>
                 <outlet property="loginButton" destination="QCQ-Dg-Wdi" id="a0q-Iu-Bac"/>
                 <outlet property="passwordTextField" destination="aV6-vx-OZi" id="iJM-hc-Vr6"/>
                 <outlet property="signupForFacebookLabel" destination="X69-du-WZy" id="o6t-GX-OIc"/>
@@ -37,6 +38,9 @@
                         <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="tapLoginButton:" destination="-1" eventType="touchUpInside" id="3XN-We-WEf"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X69-du-WZy">
                     <rect key="frame" x="86" y="410" width="150" height="30"/>
@@ -54,6 +58,10 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="QwS-9H-35F">
+                    <rect key="frame" x="263" y="278" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="0.23529411764705882" green="0.34509803921568627" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

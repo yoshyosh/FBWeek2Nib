@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "FeedViewController.h"
 
 @implementation AppDelegate
 
@@ -16,7 +17,15 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
-    self.window.rootViewController = loginViewController;
+    
+    FeedViewController *feedViewController = [[FeedViewController alloc] init];
+    UINavigationController *feedNavigationController = [[UINavigationController alloc] initWithRootViewController:feedViewController];
+    
+    feedNavigationController.navigationBar.barTintColor = [[UIColor alloc] initWithRed:67.0/255.0 green:95.0/255.0 blue:163.0/255.0 alpha:1.0];
+    feedNavigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+    feedNavigationController.navigationBar.translucent = NO;
+    
+    self.window.rootViewController = feedNavigationController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
