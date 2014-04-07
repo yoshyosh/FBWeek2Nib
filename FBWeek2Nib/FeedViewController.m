@@ -10,6 +10,8 @@
 
 @interface FeedViewController ()
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *feedViewIndicator;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
 
 @end
 
@@ -29,6 +31,8 @@
     [super viewDidLoad];
     
     [self.feedViewIndicator startAnimating];
+    self.scrollView.contentSize = self.contentView.bounds.size;
+    self.scrollView.hidden = YES;
     
     self.navigationItem.title = @"News Feed";
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"leftButton"] style:UIBarButtonItemStylePlain target:self action:@selector(onLeftButton:)];
@@ -44,7 +48,7 @@
 
 - (void)showNewsfeed {
     [self.feedViewIndicator stopAnimating];
-    NSLog(@"Saying something here");
+    self.scrollView.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning
