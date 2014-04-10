@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "FeedViewController.h"
+#import "MoreViewController.h"
 
 @implementation AppDelegate
 
@@ -20,13 +21,18 @@
     
     FeedViewController *feedViewController = [[FeedViewController alloc] init];
     UINavigationController *feedNavigationController = [[UINavigationController alloc] initWithRootViewController:feedViewController];
+    feedNavigationController.tabBarItem.title = @"Newfeed";
     
     feedNavigationController.navigationBar.barTintColor = [[UIColor alloc] initWithRed:67.0/255.0 green:95.0/255.0 blue:163.0/255.0 alpha:1.0];
     feedNavigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     feedNavigationController.navigationBar.translucent = NO;
     
+    MoreViewController *moreViewController = [[MoreViewController alloc] init];
+    UINavigationController *moreNavigationController = [[UINavigationController alloc] initWithRootViewController:moreViewController];
+    moreNavigationController.tabBarItem.title = @"More";
+    
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[feedNavigationController];
+    tabBarController.viewControllers = @[feedNavigationController, moreNavigationController];
     
     self.window.rootViewController = tabBarController;
     
